@@ -20,21 +20,8 @@
 \usepackage{tabularx}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -102,21 +89,14 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape James Cheng} \\ \vspace{1pt}
     \small +1 (408)-981-8876 $|$ \href{mailto:jzcheng@stanford.edu}{\underline{jzcheng@stanford.edu}} $|$
     \href{https://www.linkedin.com/in/jamescheng24/}{\underline{linkedin.com/in/jamescheng24/}}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
@@ -126,7 +106,7 @@
       {M.S. in Computer Science, Artificial Intelligence Specialization}{Expected Jun. 2026}
       \resumeItemListStart
         \resumeItem{\textbf{Courses}: Reinforcement Learning, NLP, Computer Vision, Robot Autonomy \& Perception, Parallel Computing}
-        \resumeItemListEnd
+      \resumeItemListEnd
     \resumeSubheading
       {University of California, Berkeley - Regents' and Chancellor's Scholar}{Berkeley, CA}
       {B.A. in Computer Science and B.S. in Business Administration, GPA: 3.92/4.00}{Aug. 2020 -- May 2024}
@@ -135,140 +115,75 @@
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
-
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
         {Stanford CS}{Stanford, CA}
-        {Research Engineer - The Movement Lab}{Sep. 2025 --- Present}
+        {Research Engineer - The Movement Lab}{Sep. 2025 -- Present}
         \resumeItemListStart
-            \resumeItem{Porting advanced motion imitation methods (DeepMimic, AMP, ASE, ADD) from MimicKit to MuJoCo Lab, integrating them with the Isaac Lab API for scalable humanoid motion control and policy learning}
+            \resumeItem{Reimplementing motion imitation methods (DeepMimic, AMP, ASE, ADD) in MuJoCo Lab with the Isaac Lab API, enabling scalable humanoid motion control and policy learning on GPU-parallel simulators}
         \resumeItemListEnd
 
         \resumeSubSubheading
         {Teaching Assistant (CS234: Reinforcement Learning, CS161: Design \& Analysis of Algorithms)}{Sep. 2025 -- Present}
         \resumeItemListStart
-            \resumeItem{Selected as Course Staff for Graduate Reinforcement Learning (CS 234), guiding students through implementations of PPO, RLHF, and DPO in PyTorch/MuJoCo.}
-            \resumeItem{Led office hours for Algorithms, clarifying complex topics in dynamic programming, graph theory, and randomized algorithms for 300+ students.}
+            \resumeItem{Guiding 100+ graduate students through implementations of PPO, RLHF, and DPO in PyTorch/MuJoCo (CS 234); leading office hours on dynamic programming, graph theory, and randomized algorithms for 300+ students (CS 161)}
         \resumeItemListEnd
 
     \resumeSubheading
       {Amazon}{Sunnyvale, CA}
       {Software Engineering Intern - Kindle}{Jun. 2025 -- Sep. 2025}
       \resumeItemListStart
-        \resumeItem{Architected the backend integration for on-device AI image generation, orchestrating low-latency communication between constrained Kindle hardware (C++) and cloud inference (AWS Bedrock/Lambda)}
+        \resumeItem{Architected backend integration for on-device AI image generation, orchestrating low-latency communication between constrained Kindle hardware (C++) and cloud inference (AWS Bedrock/Lambda)}
       \resumeItemListEnd
 
     \resumeSubheading
       {UC Berkeley EECS}{Berkeley, CA}
       {Undergraduate Research Assistant - BAIR Lab (Advised by Prof. Shankar Sastry)}{Jun. 2023 -- May 2024}
       \resumeItemListStart
-        \resumeItem{Implemented follower-agnostic convergent algorithm for a traffic routing Stackelberg Game using Python; ran numerical experiments across 12 trajectories and tuned step-size, perturbation, and regularization parameters, and visualized convergence of objective values and tolls to stationary point; \textbf{paper accepted to CDC 2024}}
-        % \resumeItem{Developed program to simulate arc-based traffic assignment model using Python and visualized simulation}
+        \resumeItem{Developed a follower-agnostic convergent algorithm for traffic routing Stackelberg Games; ran numerical experiments across 12 trajectories, tuning step-size, perturbation, and regularization parameters to verify convergence to stationary points; \textbf{paper accepted to CDC 2024}}
       \resumeItemListEnd
 
       \resumeSubSubheading
         {Teaching Assistant (CS 70: Discrete Mathematics and Probability)}{Aug. 2022 -- May 2024}
       \resumeItemListStart
-        \resumeItem{Led students in discussion, assisted in office hours, and graded homework for 500+ students on topics such as proofs, stable matching, graph theory, modular arithmetic, cryptography, computability, combinatorics, and probability}
+        \resumeItem{Led weekly discussions, held office hours, and graded assignments for 500+ students across 4 semesters, covering proofs, graph theory, modular arithmetic, computability, and probability}
       \resumeItemListEnd
-
-
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
     \resumeSubheading
       {RUCKUS Networks - CommScope}{Sunnyvale, CA}
-      {Software Engineering Intern - Application Development Engineering Team}{Jun. 2023 -- Aug. 2023}
+      {Software Engineering Intern}{Jun. 2023 -- Aug. 2023}
       \resumeItemListStart
-          \resumeItem{Developed Airbyte connectors in Python to ingest 10k+ daily records into BigQuery and built CI/CD pipelines with Docker/Bitbucket, reducing manual deployment overhead.}
-        % \resumeItem{Developed 2 Airbyte data connectors using Python for third-party services by calling REST APIs, resulting in 10k+ records ingested into BigQuery daily and \textbf{reducing time to pull 1M records from 5 hours to a few seconds}}
-        % \resumeItem{Implemented 30+ Pytest unit tests and created Dockerfiles with Bitbucket CI/CD pipelines to automate testing and deployment, reducing manual overhead.}
-        % \resumeItem{Implemented 30+ unit tests in Pytest to ensure proper functionality of each file and function and wrote SQL and YAML for data transformations to integrate dbt with Airbyte}
-        % \resumeItem{Created Dockerfile to build Docker image for integration with Airbyte along with developing CI/CD build with Bitbucket pipelines for automatically building and testing application during each code push}
-        % \resumeItem{Analyzed ingested data using PowerBI by generating 10 visualizations for activity metrics}
-    \resumeItemListEnd
-
-    % \resumeSubheading
-    %   {Paramount Global}{New York, NY}
-    %   {Data Engineering Intern - Data Technology Solutions Team}{Jun. 2022 -- Aug. 2022}
-    %   \resumeItemListStart
-    %     \resumeItem{Implemented 6 types of data quality tests in SQL and YAML via dbt (Data Build Tool) for 20+ models: freshness, null check, uniqueness, referential integrity, consistency, and accuracy}
-    %     \resumeItem{Automated and orchestrated data testing through writing DAG files in Python for Apache Airflow}
-    %   \resumeItemListEnd
-
-      % \resumeSubheading
-      % {Align Technology}{San Jose, CA}
-      % {Data Analytics Intern - Global Business Analytics Team}{Jun. 2021 -- Aug. 2021}
-      % \resumeItemListStart
-      %   \resumeItem{Analyzed global data using SQL Server Management Studio and Microsoft Excel, gaining insights into financial KPIs such as revenue, market penetration, and profit margin trends across customer demographics}
-      %   \resumeItem{Researched and discovered \$17 M incremental revenue per year opportunity in Invisalign Doctor Service WebStore}
-
-      % \resumeItemListEnd
+          \resumeItem{Built Airbyte data connectors in Python to ingest 10k+ daily records into BigQuery; created Docker containers and Bitbucket CI/CD pipelines to automate testing and deployment}
+      \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-        % \resumeProjectHeading
-        %     {\textbf{Automatic Music Transcription: Sustain Pedal Prediction} $|$ \emph{Python, PyTorch}}{\textit{Sep. 2024 -- Dec. 2024}}
-        %     \resumeItemListStart
-        %         \resumeItem{Contributed to CNN and LSTM model that takes as input audio piano music and outputs predictions of whether the sustain pedal is used for each time frame, achieving \textbf{92\% accuracy}}
-        %         \resumeItem{Developed evaluation pipeline and logistic regression baseline with cross-validation which achieved 68\% accuracy}
-        %     \resumeItemListEnd
-
-      %   \resumeProjectHeading
-      %     {\textbf{Stock Prediction} $|$ \emph{Python, Scikit-learn, Pandas, NumPy}}{\textit{Jan. 2024 -- May 2024}}
-      %     \resumeItemListStart
-      %       \resumeItem{Transformed 2017-2018 company data via imputation and PCA to predict growth and create profitable portfolio}
-      %       \resumeItem{Cross-validated across linear regression, kNN, neural network, decision tree, and naive Bayes models to develop a \textbf{top-3 performing model in terms of profit out of 52 students}}
-      % \resumeItemListEnd
       \resumeProjectHeading
-  {\textbf{Constrained Text Generation Benchmark (CTG)} $|$ \emph{Python, uv, Together API, Anthropic API, spaCy}}{\textit{Jan. 2026 -- Present}}
-  \resumeItemListStart
-    \resumeItem{Designed a \textbf{348-prompt} benchmark (101 local / 97 global / 150 hybrid constraints) with dual-path verification (programmatic + LLM grading) to quantify autoregressive models' constraint-following limitations across 6 LLMs.}
-    \resumeItem{Evaluated Claude, Llama, and DeepSeek models on \textbf{7,889 expanded prompt variants}, confirming a steep difficulty gradient (local 37--53\% vs. global 12--21\% pass rates) driven by autoregressive planning bottlenecks.}
-    \resumeItem{Built SFT and DPO fine-tuning pipelines on Together AI to improve constraint adherence, plus meta-ablation analyses comparing hybrid composition pass rates against individual constraint baselines.}
-  \resumeItemListEnd
-
+        {\textbf{Constrained Text Generation Benchmark (CTG)} $|$ \emph{Python, Together API, Anthropic API, spaCy}}{\textit{Jan. 2026 -- Present}}
+        \resumeItemListStart
+          \resumeItem{Designed a \textbf{348-prompt} benchmark (local / global / hybrid constraints) with dual-path verification (programmatic + LLM) to quantify autoregressive constraint-following limitations across 6 LLMs on \textbf{7,889 expanded variants}}
+          \resumeItem{Built SFT and DPO fine-tuning pipelines on Together AI and meta-ablation analyses, confirming a steep difficulty gradient (local 37--53\% vs.\ global 12--21\% pass rates) driven by planning bottlenecks}
+        \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{LLM-as-Planner vs RL on Procgen} $|$ \emph{PyTorch, StableBaselines3, Amazon Bedrock}}{\textit{Mar. 2025 -- Jun. 2025}}
           \resumeItemListStart
-            \resumeItem{Built hybrid RL-LLM agents with entropy-based mode switching, boosting task success rates up to 2× by enabling sustained LLM-guided control in complex environments.}
-            \resumeItem{Benchmarked LLM planning vs. RL baselines (PPO, DQN) across procedurally generated environments, uncovering trade-offs between zero-shot generalization and fine-grained control.}
+            \resumeItem{Built hybrid RL-LLM agents with entropy-based mode switching, boosting task success rates up to 2$\times$ over RL-only baselines (PPO, DQN) across procedurally generated environments}
           \resumeItemListEnd
-
-      % \resumeProjectHeading
-      %     {\textbf{RUCKUS GPT Chatbot} $|$ \emph{Python, LangChain, OpenAI, Streamlit, FAISS, PyPDF}}{\textit{Jun. 2023 -- Aug. 2023}}
-      %     \resumeItemListStart
-      %       \resumeItem{Developed customer support chatbot in Python with embedded documents and memory to have complex conversations, achieving \textbf{top 5 out of 300+ projects globally in hackathon}}
-      %       \resumeItem{Integrated the following Python packages: Streamlit for user interface, OpenAI for language model and embeddings, LangChain for conversation chain and chat history, FAISS for vector indexing, and PyPDF for parsing PDFs}
-      %     \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-
-
-%
-%-----------PROGRAMMING SKILLS-----------
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages/Packages}{: Python, C/C++ and CUDA, Rust, Java, SQL, PyTorch, NumPy, Pandas} \\
-     \textbf{Platform/Tools}{: MuJoCo, VS Code, AWS, Git, Docker, Apache Airflow, Google Cloud Platform, Jupyter, PowerBI} \\
+     \textbf{Languages}{: Python, C/C++, CUDA, Rust, Java, SQL} \quad
+     \textbf{ML/Tools}{: PyTorch, MuJoCo, NumPy, AWS, Docker, Git, GCP}
     }}
  \end{itemize}
 
-
-%-------------------------------------------
 \end{document}
