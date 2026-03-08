@@ -234,10 +234,11 @@
       %       \resumeItem{Cross-validated across linear regression, kNN, neural network, decision tree, and naive Bayes models to develop a \textbf{top-3 performing model in terms of profit out of 52 students}}
       % \resumeItemListEnd
       \resumeProjectHeading
-  {\textbf{LLM Data Curation \& Constraint-Following Benchmark (CTG)} $|$ \emph{Python, uv, Together API}}{\textit{Jan. 2026 -- Present}}
+  {\textbf{Constrained Text Generation Benchmark (CTG)} $|$ \emph{Python, uv, Together API, Anthropic API, spaCy}}{\textit{Jan. 2026 -- Present}}
   \resumeItemListStart
-    \resumeItem{Built an LLM evaluation pipeline for \textbf{101 prompts} (32 local / 37 global / 32 hybrid) with deterministic verifiers and structured ablations to measure constraint-following reliability and pretraining-data quality.}
-    \resumeItem{Implemented ID-based schema validation plus automated generation/scoring workflows, improving reproducibility and reducing prompt/response mismatch and reasoning-leakage noise in evaluations.}
+    \resumeItem{Designed a \textbf{348-prompt} benchmark (101 local / 97 global / 150 hybrid constraints) with dual-path verification (programmatic + LLM grading) to quantify autoregressive models' constraint-following limitations across 6 LLMs.}
+    \resumeItem{Evaluated Claude, Llama, and DeepSeek models on \textbf{7,889 expanded prompt variants}, confirming a steep difficulty gradient (local 37--53\% vs. global 12--21\% pass rates) driven by autoregressive planning bottlenecks.}
+    \resumeItem{Built SFT and DPO fine-tuning pipelines on Together AI to improve constraint adherence, plus meta-ablation analyses comparing hybrid composition pass rates against individual constraint baselines.}
   \resumeItemListEnd
 
 
