@@ -124,12 +124,6 @@
   \resumeSubHeadingListStart
     \resumeSubheading
         {Stanford CS}{Stanford, CA}
-        {Research Engineer - The Movement Lab}{Sep. 2025 -- Present}
-        \resumeItemListStart
-            \resumeItem{Reimplementing motion imitation methods (DeepMimic, AMP, ASE, ADD) in MuJoCo Lab with the Isaac Lab API, enabling scalable humanoid motion control and policy learning on GPU-parallel simulators}
-        \resumeItemListEnd
-
-        \resumeSubSubheading
         {Teaching Assistant (CS234: Reinforcement Learning, CS161: Design \& Analysis of Algorithms)}{Sep. 2025 -- Present}
         \resumeItemListStart
             \resumeItem{Guiding 100+ graduate students through implementations of PPO, RLHF, and DPO in PyTorch/MuJoCo (CS 234); leading office hours on dynamic programming, graph theory, and randomized algorithms for 300+ students (CS 161)}
@@ -172,6 +166,13 @@
         \resumeItemListStart
           \resumeItem{Designed a \textbf{348-prompt} benchmark (local / global / hybrid constraints) with dual-path verification (programmatic + LLM) to quantify autoregressive constraint-following limitations across 6 LLMs on \textbf{7,889 expanded variants}}
           \resumeItem{Built SFT and DPO fine-tuning pipelines on Together AI and meta-ablation analyses, confirming a steep difficulty gradient (local 37--53\% vs.\ global 12--21\% pass rates) driven by planning bottlenecks}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{MuSR: Murder Mystery Reasoning Benchmark} $|$ \emph{Python, Together API, HuggingFace, Redis}}{\textit{Jan. 2026 -- Mar. 2026}}
+        \resumeItemListStart
+          \resumeItem{Extended the MuSR benchmark (ICLR 2024 Spotlight) with dynamic belief update and counterfactual reasoning tracks, generating graph-structured mystery datasets to evaluate multi-step logical deduction in LLMs}
+          \resumeItem{Built streaming evaluation pipeline testing how models revise predictions across evidence rounds, with configurable context lengths and red-herring injection for controlled difficulty scaling}
         \resumeItemListEnd
 
       \resumeProjectHeading
